@@ -99,3 +99,15 @@ The boot process shows systemd starting core services such as snapd and cloud-in
 This indicates the server installation finished successfully and the system is ready for configuration.
 
 ![Ubuntu First Boot](screenshots/08-first-server-boot.png)
+
+## Editing the Default Web Page
+
+After installing Nginx, the default webpage was modified to verify that the web server was functioning correctly.
+
+The file edited was:
+
+/var/www/html/index.html
+
+The page content was updated with a simple HTML message to confirm the deployment.
+
+![Editing nginx page](screenshots/09-edit-nginx-index-page.png)
