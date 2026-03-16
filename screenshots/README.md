@@ -49,3 +49,13 @@ This occurred because the Ubuntu Server ISO was not properly mounted to the VM.
 After attaching the ISO file to the virtual CD drive and restarting the VM, the Ubuntu installer launched correctly.
 
 ![OS Not Found Error](screenshots/04-os-not-found-pxe-boot.png)
+
+## Fixing Boot Error: Attaching Ubuntu ISO
+
+After the VM failed to boot and displayed "Operating system not found", the issue was traced to the installation media not being attached.
+
+The Ubuntu Server ISO was manually mounted to the VM's virtual CD/DVD drive through VMware's Virtual Machine Settings.
+
+Once the ISO was attached, the VM was restarted and the Ubuntu installer launched successfully.
+
+![Attach Ubuntu ISO](screenshots/05-attach-ubuntu-iso.png)
