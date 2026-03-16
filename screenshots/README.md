@@ -59,3 +59,19 @@ The Ubuntu Server ISO was manually mounted to the VM's virtual CD/DVD drive thro
 Once the ISO was attached, the VM was restarted and the Ubuntu installer launched successfully.
 
 ![Attach Ubuntu ISO](screenshots/05-attach-ubuntu-iso.png)
+
+## Configuring Network Connectivity
+
+During installation Ubuntu automatically detected the VM network adapter and configured it using DHCP.
+
+The interface `ens33` received the IP address:
+
+```
+192.168.20.128
+```
+
+This confirms the virtual machine successfully connected to the network through the VMware virtual adapter.
+
+Network connectivity is required so the server can download updates and install packages during setup.
+
+![Ubuntu Network Configuration](screenshots/06-ubuntu-network-configuration.png)
