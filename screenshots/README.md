@@ -17,3 +17,21 @@ VMware automatically detected the operating system from the installer disk.
 This allows VMware to preconfigure the VM using the Easy Install feature.
 
 ![VM Install Wizard](screenshots/02-vm-install-wizard.png)
+
+## Issue Encountered: Virtualization Disabled
+
+When attempting to power on the virtual machine, VMware returned the following error:
+
+"This host supports AMD-V, but AMD-V is disabled."
+
+This indicates that CPU virtualization support was disabled in the system BIOS/UEFI firmware.
+
+Since VMware relies on hardware virtualization extensions to run virtual machines, the VM could not start until this feature was enabled.
+
+Resolution:
+
+Virtualization (SVM / AMD-V) was enabled in the BIOS settings and the host machine was restarted.
+
+After enabling virtualization, VMware was able to start the Ubuntu virtual machine successfully.
+
+![AMD-V Disabled Error](screenshots/03-amd-virtualization-disabled-error.png)
