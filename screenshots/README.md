@@ -75,3 +75,19 @@ This confirms the virtual machine successfully connected to the network through 
 Network connectivity is required so the server can download updates and install packages during setup.
 
 ![Ubuntu Network Configuration](screenshots/06-ubuntu-network-configuration.png)
+
+## Enabling SSH Access
+
+During installation the OpenSSH server package was selected to allow remote administration of the server.
+
+SSH enables administrators to securely access the machine over the network using encrypted connections.
+
+Password authentication was enabled during the setup process.
+
+Example connection command:
+
+ssh username@server-ip
+
+![OpenSSH installation](screenshots/07-enable-openssh-install.png)
+
+
