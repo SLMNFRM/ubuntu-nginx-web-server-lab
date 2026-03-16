@@ -90,4 +90,12 @@ ssh username@server-ip
 
 ![OpenSSH installation](screenshots/07-enable-openssh-install.png)
 
+## First Boot of the Server
 
+After installation completed, the Ubuntu server started successfully and initialized system services.
+
+The boot process shows systemd starting core services such as snapd and cloud-init. SSH host keys were also generated, confirming that the OpenSSH service is active and ready for remote connections.
+
+This indicates the server installation finished successfully and the system is ready for configuration.
+
+![Ubuntu First Boot](screenshots/08-first-server-boot.png)
