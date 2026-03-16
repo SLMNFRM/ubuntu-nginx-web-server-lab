@@ -35,3 +35,17 @@ Virtualization (SVM / AMD-V) was enabled in the BIOS settings and the host machi
 After enabling virtualization, VMware was able to start the Ubuntu virtual machine successfully.
 
 ![AMD-V Disabled Error](screenshots/03-amd-virtualization-disabled-error.png)
+
+## Issue Encountered: Operating System Not Found
+
+After enabling virtualization and starting the VM, the system displayed the following message:
+
+"Operating System not found"
+
+The VM attempted a PXE network boot because it could not detect a bootable installation disk.
+
+This occurred because the Ubuntu Server ISO was not properly mounted to the VM.
+
+After attaching the ISO file to the virtual CD drive and restarting the VM, the Ubuntu installer launched correctly.
+
+![OS Not Found Error](screenshots/04-os-not-found-pxe-boot.png)
